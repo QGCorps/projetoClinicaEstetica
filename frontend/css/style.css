@@ -5,66 +5,130 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Sora';
+  
 }
+
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  background-color: #EEE;
+}
+
 header{
-  height: 9.375em;
+  height: 180px;
   display: flex;
+  background-color: #5b3971;
+  
+}
+
+.topo{
   background-color: #5b3971;
 }
 
 .logo{
-  width: 10.625em;
-  height: 10.625em;
+  width: 150px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 25px;
 }
 
 .logo img{
-  width: 90%;
-  height: 85%;
-  min-width: 50%;
-  min-height: 50%;
+  width: 150px;
+  height: auto;
+  min-width: 20%;
+  min-height: 20%;
 }
 
 .btnMenu{
   background-color: #f2d022;
-  width: 11.25em;
-  height: 2.5em;
-  border-radius: 1em;
+  width: 180px;
+  height: 40px;
+  border-radius: 15px;
   font-weight: bold;
-  font-size: 1.125em;
+  font-size: 20px;
+  text-decoration: none;
   border: none;
   color: #5b3971;
   cursor: pointer;
-  margin-left: 75vw;
+  margin-left: 65vw;
   margin-top: 5vh;
-  box-shadow: 0.125em 0.125em 0.125em rgb(#b2b2b2);
+  box-shadow: 2px 2px 2px rgb(#B2B2B2);
 }
 
 .menu{
   width: 75vw;
-  height: 2.5em;
-  margin-top: 1.25em;
+  height: 40px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.3125em;
-  margin-left: 2.5em;
-}
+  margin-left: 40px;
+} 
 
 .menu ul{
   display: flex;
   list-style: none;
   justify-content: space-around;
   width: 60vw;
-  margin-bottom:10vh;
 }
 
 .menu ul a{
   text-decoration: none;
   color:#f2d022;
   font-size: 1.25em;
+  font-weight: 500;
+  font-size: x-large;
 }
 
 .menu ul li:hover{
   color: #EEE;
   transform: scale(1.15);
+}
+
+ .carrossel{
+  width: 80vw;
+  height: 350px;
+  margin-top: 80px;
+  margin-left: 5%;
+  margin-right: 5%;
+ 
+}
+
+.foto{
+  width: 100%;
+}
+
+.carrossel img{
+  width: 30%;
+  height: 350px;
+  text-align: center;
+}
+
+
+footer{
+  width: 100%;
+  background-color: #5b3971;
+  color:#f2d022;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2em;
+  left: 0;
+  bottom: 0;
+  position: absolute
+}
+
+footer img{
+  width: 1.3em;
+  height: auto;
+  margin-top: 4em;
+}
+
+.footerText{
+  margin-left: 90em;
+  font-size: 1em;
 }
