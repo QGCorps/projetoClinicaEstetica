@@ -167,10 +167,27 @@ header{
 }
 
 .pacotes{
-  width: 100%;
+  width: 70vw;
   height: 20em;
-  margin: 1% auto 5% auto;
+  margin-top: 25px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+  text-align: center;
+  text-decoration: none;
+
 }
+
+.coluna {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 400;
+  margin-right: auto;
+  text-decoration: none;
+}
+
 
 footer{
   width: 100%;
