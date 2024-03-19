@@ -1,54 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./src/atelieMajuGaleLogo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Ateliê - Maju Galé</title>
-    <link rel="stylesheet" type="text/css" href="./js/slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./js/slick-1.8.1/slick/slick-theme.css" /> 
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./src/atelieMajuGaleLogo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/agenda.css" />
+  <title>Ateliê - Maju Galé</title>
+</head>
 
-    <div id="wrapper">
-      <div class="container body-content">
-        <header>
-          <div class="logo">
-            <img src="./src/atelieMajuGaleLogo.png" alt="logo escrito M G atelie Maju Galé"/>
-          </div>
-          <div class="topo">
-            <button class="btnMenu">Login</button>
-            <div class="menu">
-              <nav>
-                <ul>
-                  <a href="./index.html"> <li>Home</li> </a>
-                  <a href="./agenda.html"> <li>Agenda</li> </a>
-                  <a href="./servicos.html"> <li>Serviços</li> </a>
-                  <a href="./sobre.html"> <li>Sobre</li> </a>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </header>
+<body>
 
-
-    </div>
-
-      <footer>
-        <div class="footerImg">
-          <a href="https://www.instagram.com/ateliemajugale"><img src="./src/icons8-instagram-96.png" alt="logotipo do Instagram" class="logoFooter"></a>
-          <a href=""><img src="./src/icons8-whatsapp-128.png" alt="logotipo do Whatsapp" class="logoFooter"></a>
-          <a href=""><img src="./src/icons8-facebook-128.png" alt="logotipo do Facebook" class="logoFooter"></a>
+  <div id="wrapper">
+    <div class="container body-content">
+      <header>
+        <div class="logo">
+          <img src="./src/atelieMajuGaleLogo.png" alt="logo escrito M G atelie Maju Galé" />
         </div>
-          <div class="footerText">Desenvolvido por @KameHouse 🏠</div>
-      </footer>
+        <div class="topo">
+          <button class="btnMenu">Login</button>
+          <div class="menu">
+            <nav>
+              <ul>
+                <a href="./index.html">
+                  <li>Home</li>
+                </a>
+                <a href="./agenda.html">
+                  <li>Agenda</li>
+                </a>
+                <a href="./servicos.html">
+                  <li>Serviços</li>
+                </a>
+                <a href="./sobre.html">
+                  <li>Sobre</li>
+                </a>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
 
+      <div class="agenda">
+        <div class="titulo">
+          <h1>Agendamento</h1>
+
+          <h2>Dados Pessoais</h2>
+        </div>
+
+        <form action="" class="estiloForm">
+          <div class="controle-form">
+            <label for="username">Nome Completo:*</label>
+            <input type="text" id="nome_agenda" placeholder="Digite seu nome">
+          </div>
+
+          <form action="" class="estiloForm" id="">
+            <div class="controle-form">
+              <label for="whatsapp">WhatsApp:*</label>
+              <input type="tel" name="" id="" placeholder="Digite seu WhatsApp">
+            </div>
+
+
+            <div class="estilos">
+              <div class="coluna1">
+
+                <h2>Procedimento</h2>
+
+                <form action=""> <input type="checkbox" name="" id=""><label for=""> Maquiagem</label> </form>
+                <form action=""> <input type="checkbox" name="" id=""><label for=""> Fibra de Vidro</label> </form>
+                <form action=""> <input type="checkbox" name="" id=""><label for=""> Esmaltação em Gel</label> </form>
+                <form action=""> <input type="checkbox" name="" id=""><label for=""> Drenagem Linfática</label>
+                </form>
+                <form action=""> <input type="checkbox" name="" id=""><label for=""> Massagem</label> </form>
+                <form action=""> <input type="checkbox" name="" id=""><label for=""> Limpeza de Pele</label> </form>
+
+              </div>
+
+
+              <div class="coluna2">
+                <h2>Pacotes</h2>
+
+                <h3>Massagem Relaxante</h3>
+
+                <form action=""> <input type="radio" name="" id=""><label for="">4 - Sessões</label></form>
+                <form action=""> <input type="radio" name="" id=""><label for="">8 - Sessões</label></form>
+                <form action=""> <input type="radio" name="" id=""><label for="">12 - Sessões</label></form>
+
+                <h3>Drenagem Linfática</h3>
+
+                <form action=""> <input type="radio" name="" id=""><label for="">4 - Sessões</label></form>
+                <form action=""> <input type="radio" name="" id=""><label for="">8 - Sessões</label></form>
+                <form action=""> <input type="radio" name="" id=""><label for="">12 - Sessões</label></form>
+
+              </div>
+
+              <div class="estiloHora">
+                <p>Data/Hora:*</p>
+                <form action=""><input type="datetime-local" name="" id=""><label for=""></label></form>
+              </div>
+
+              <div class="botao">
+                <button type="submit" id="btnEnviar">Enviar</button>
+              </div>
+
+          </form>
+        </form>
+      </div>
     </div>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- IMPORTANTE: obedecer essa ordem -->
-  </body>
+  </div>
+  <footer>
+    <div class="footerImg">
+      <a href="https://www.instagram.com/ateliemajugale"><img src="./src/icons8-instagram-96.png"
+          alt="logotipo do Instagram" class="logoFooter"></a>
+      <a href=""><img src="./src/icons8-whatsapp-128.png" alt="logotipo do Whatsapp" class="logoFooter"></a>
+      <a href=""><img src="./src/icons8-facebook-128.png" alt="logotipo do Facebook" class="logoFooter"></a>
+    </div>
+    <div class="footerText">Desenvolvido por @KameHouse 🏠</div>
+  </footer>
+
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- IMPORTANTE: obedecer essa ordem -->
+</body>
+
 </html>

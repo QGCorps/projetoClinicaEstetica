@@ -1,0 +1,71 @@
+
+
+.agenda{
+    margin-top: 80px;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.titulo h1{
+    color:#5b3971;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;   
+}
+
+.titulo h2{
+    color:#5b3971;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.estiloForm{
+    border-style: solid;
+    border-color: #5b3971;
+    border-radius: 25px;
+    width: 75vw;
+    height: 100vh;
+    color: #5b3971;
+}
+
+.controle-form{    
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+.controle-form label{
+    margin-left: 25px;
+}
+
+.controle-form input{
+    width: 70vw;
+    border-style: solid;
+    border-color: #5b3971;
+    border-radius: 20px;
+    color: #5b3971;
+    padding: 15px 15px;
+    margin: 10px 0;
+ }
+
+.estilos{
+    background-color: cadetblue;
+}
+
+.coluna1 .coluna2{
+    background-color: aqua;
+}
+
+.botao{
+    background-color: chocolate;
+}
+
+.botao button{
+    background-color: crimson;
+}

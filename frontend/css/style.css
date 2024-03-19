@@ -66,7 +66,7 @@ header{
   font-size: 20px;
   text-decoration: none;
   border: none;
-  color: #5b3971;
+  color: rgb (92, 0, 113);
   cursor: pointer;
   margin-left: 65vw;
   margin-top: 5vh;
@@ -191,9 +191,8 @@ header{
 
 footer{
   width: 100%;
-  line-height: 2.125em;
-  background: rgb(92,0,103);
-background: radial-gradient(circle, rgba(92,0,103,1) 19%, rgba(91,57,113,1) 49%);
+  line-height: 2em;
+  background-color: #5b3971;
   color:#f2d022;
   font-size: 1em;
   font-weight: bold;
@@ -212,6 +211,6 @@ footer img{
 }
 
 .footerText{
-  margin-left: 100em;
+  margin-left: 70vw;
   font-size: 1em;
 }
