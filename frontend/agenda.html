@@ -40,75 +40,107 @@
           </div>
         </div>
       </header>
-
+      
       <div class="agenda">
         <div class="titulo">
           <h1>Agendamento</h1>
-
-          <h2>Dados Pessoais</h2>
         </div>
-
-        <form action="" class="estiloForm">
-          <div class="controle-form">
-            <label for="username">Nome Completo:*</label>
-            <input type="text" id="nome_agenda" placeholder="Digite seu nome">
-          </div>
-
-          <form action="" class="estiloForm" id="">
-            <div class="controle-form">
-              <label for="whatsapp">WhatsApp:*</label>
-              <input type="tel" name="" id="" placeholder="Digite seu WhatsApp">
+        <div class="conteudo">
+          <form action="" class="form" id="form">
+            <h2>Dados Pessoais</h2>
+            <div class="controle-form dadosPessoais">
+              <label for="username">Nome Completo:*</label>
+              <input type="text" id="nome_agenda" placeholder="Digite seu nome">
             </div>
 
-
-            <div class="estilos">
-              <div class="coluna1">
-
-                <h2>Procedimento</h2>
-
-                <form action=""> <input type="checkbox" name="" id=""><label for=""> Maquiagem</label> </form>
-                <form action=""> <input type="checkbox" name="" id=""><label for=""> Fibra de Vidro</label> </form>
-                <form action=""> <input type="checkbox" name="" id=""><label for=""> Esmaltação em Gel</label> </form>
-                <form action=""> <input type="checkbox" name="" id=""><label for=""> Drenagem Linfática</label>
-                </form>
-                <form action=""> <input type="checkbox" name="" id=""><label for=""> Massagem</label> </form>
-                <form action=""> <input type="checkbox" name="" id=""><label for=""> Limpeza de Pele</label> </form>
-
-              </div>
-
-
-              <div class="coluna2">
-                <h2>Pacotes</h2>
-
+            <div class="controle-form dadosPessoais">
+              <label for="telefone">WhatsApp:*</label>
+              <input type="tel" id="telefone_agenda" placeholder="Digite seu WhatsApp">
+            </div>
+            
+            <div class="procedimento">
+              <h2>Procedimento</h2>
+                <label class="itemCheckbox controle-form"> Fibra de Vidro
+                  <input type="checkbox" name="" id="fibra_agenda">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="itemCheckbox controle-form"> Esmaltação em Gel
+                  <input type="checkbox" name="" id="esmaltacao_agenda">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="itemCheckbox controle-form"> Maquiagem
+                  <input type="checkbox" name="" id="maquiagem_agenda">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="itemCheckbox controle-form"> Limpeza de Pele
+                  <input type="checkbox" name="" id="limpeza_agenda">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="itemCheckbox controle-form"> Massagem
+                  <input type="checkbox" name="" id="massagem_agenda">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="itemCheckbox controle-form"> Drenagem Linfática
+                  <input type="checkbox" name="" id="drenagem_agenda">
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="pacotes">
+              <h2>Pacotes</h2>
+              <div class="massagemRadio linha">
                 <h3>Massagem Relaxante</h3>
-
-                <form action=""> <input type="radio" name="" id=""><label for="">4 - Sessões</label></form>
-                <form action=""> <input type="radio" name="" id=""><label for="">8 - Sessões</label></form>
-                <form action=""> <input type="radio" name="" id=""><label for="">12 - Sessões</label></form>
-
+                  <label class="controle-form itemRadio">4 - Sessões
+                    <input type="radio" name="massagemRadio" checked="checked">
+                    <span class="radiomark"></span>
+                  </label>
+                  <label class="controle-form itemRadio">8 - Sessões
+                    <input type="radio" name="massagemRadio" >
+                    <span class="radiomark"></span>  
+                  </label>
+                  <label class="controle-form itemRadio">12 - Sessões
+                    <input type="radio" name="massagemRadio" >
+                    <span class="radiomark"></span>
+                  </label>
+                  <label class="controle-form itemRadio">0 - Sessões
+                    <input type="radio" name="massagemRadio" >
+                    <span class="radiomark"></span>
+                  </label>
+              </div>
+              
+              <div class="drenagemRadio linha">
                 <h3>Drenagem Linfática</h3>
-
-                <form action=""> <input type="radio" name="" id=""><label for="">4 - Sessões</label></form>
-                <form action=""> <input type="radio" name="" id=""><label for="">8 - Sessões</label></form>
-                <form action=""> <input type="radio" name="" id=""><label for="">12 - Sessões</label></form>
-
+                  <label class="controle-form itemRadio">4 - Sessões
+                    <input type="radio" name="drenagemRadio" checked="checked">
+                    <span class="radiomark"></span>  
+                  </label>
+                  <label class="controle-form itemRadio">8 - Sessões
+                    <input type="radio" name="drenagemRadio" >
+                    <span class="radiomark"></span>
+                  </label>
+                  <label class="controle-form itemRadio">12 - Sessões
+                    <input type="radio" name="drenagemRadio" >
+                    <span class="radiomark"></span>
+                  </label>
+                  <label class="controle-form itemRadio">0 - Sessões
+                    <input type="radio" name="drenagemRadio" >
+                    <span class="radiomark"></span>
+                  </label>
               </div>
-
-              <div class="estiloHora">
-                <p>Data/Hora:*</p>
-                <form action=""><input type="datetime-local" name="" id=""><label for=""></label></form>
-              </div>
-
-              <div class="botao">
-                <button type="submit" id="btnEnviar">Enviar</button>
-              </div>
-
+            </div>
+            
+            <div class="estiloHora">
+              <label for="">Data/Hora: *</label>
+              <input type="datetime-local" name="" id="">
+            </div>
+            
+            <div class="botao">
+              <button type="submit" id="btnEnviar">Enviar</button>
+            </div>
           </form>
-        </form>
-      </div>
-    </div>
-
-  </div>
+        </div>
+      </div> <!--Agenda-->
+  
+  </div> <!--Não mexer-->
   <footer>
     <div class="footerImg">
       <a href="https://www.instagram.com/ateliemajugale"><img src="./src/icons8-instagram-96.png"
