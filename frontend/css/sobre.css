@@ -1,0 +1,86 @@
+.titulo_sobre {
+	color: #5b3971;
+	text-align: center;
+	height: 100px;
+	font-size: 32px;
+	margin-top: 50px;
+}
+
+.texto1_sobre {
+	text-align: end;
+	font-size: 18px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 55%;
+	display: flex;
+}
+
+.texto2_sobre {
+	text-align: end;
+	font-size: 18px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 55%;
+	display: flex;
+	margin-bottom: 10%;
+}
+
+.foto1 {
+	margin-right: 50px;
+	width: 50%;
+	height: auto;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	border-radius: 15px;
+
+}
+
+.foto1 img {
+	height: 40vh;
+	width: 22vw;
+	border: 10px;
+	border: #B2B2B2 20px solid;
+	border-radius: 15px;
+
+}
+
+
+
+.foto2 {
+	margin-right: 50px;
+	width: 50%;
+	height: auto;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	border-radius: 15px;
+}
+
+.foto2 img {
+	height: 40vh;
+	width: 23vw;
+	border: 10px;
+	border: #B2B2B2 20px solid;
+	border-radius: 15px;
+
+}
+
+.texto1h3 {
+	text-align: right;
+	width: 50%;
+	padding-right: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+.texto2h3 {
+	text-align: right;
+	width: 50%;
+	padding-right: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: auto;
+	text-align: start;
+}
