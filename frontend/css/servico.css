@@ -1,4 +1,3 @@
-
 .servico{
     margin-top: 50px;
     width: 80vw;
@@ -17,14 +16,12 @@
 }
 
 .tipoServico{
-    background-color: aqua;
     display: flex;
     width: 40vw;
     height: auto;
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    perspective: 1200px;
 }
 
 .conteudoImagem img{
@@ -37,50 +34,8 @@
     margin-left: 20px;    
 }
 
-/* .textoServico{
-    background-color: violet;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    justify-items: right;    
-
-} */
-
 .textoServico h2{
-    background-color: yellow;
     color: #130901;
     font-size: 30px;
     font-weight: bold;
-    /* margin-top: 50px; */
-    /* text-align: right; */
-    /* margin-bottom: 50px;    */
 }
-
-
-.front, .back{
-    position: absolute;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    transition: all 1s ease;
-}
-
-.front{
-    transform: rotateY(0deg);
-}
-
-.back{
-    transform: rotateY(180deg);
-}
-.conteiner:hover .front{
-    transform: rotateY(-180deg);
-}
-
-.conteiner:hover .back{
-    transform: rotateY(0deg);
-}
-
-/* 
-A propriedade perspective indica a profundidade do container, isto é, o quão longe o objeto está do usuário.
-A propriedade backface-visibility ocultará o verso do cartão.
-A propriedade transform-style especifica como os elementos aninhados são renderizados no estpaço 3D. 
-*/
