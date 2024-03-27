@@ -71,7 +71,7 @@
     color: #f2d022;
     font-weight: bold;
     font-size: 20px;
-    width: 20%;
+    width: 30%;
     padding: 15px;
     border-radius: 20px;
     border: 4px solid #f2d022;
@@ -94,8 +94,7 @@
     color: #5b3971;
 }
 
-.botao2 {
-    width: 35vw;
+a .botao2 {
     margin-top: 15px;
     margin-bottom: 30px;
     display: inline-flex;
@@ -103,13 +102,15 @@
 
 }
 
-.botao2 button {
+.botao2 button{
     background-color: #5b3971;
     color: #f2d022;
     font-weight: bold;
     font-size: 20px;
-    width: 30%;
+    width: 40%;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 4px solid #f2d022;
+    cursor: pointer;
+    text-decoration: none;
 }
