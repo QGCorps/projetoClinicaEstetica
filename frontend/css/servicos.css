@@ -62,3 +62,31 @@
 .containerServico:hover .maquiagemBack, .containerServico:hover .fibraBack, .containerServico:hover .esmaltacaoBack, .containerServico:hover .drenagemBack, .containerServico:hover .massagemBack, .containerServico:hover .limpezaBack{
   transform: rotateY(0deg);
 }
+
+.estilos{
+  margin: 3vh auto 10vh;
+  width: 90vw;
+  align-items: center;
+}
+.linha{
+  margin: 10px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3,3fr);
+}
+/* .estilo img{
+  width: 26vw;
+  height: 18.75em;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px var(--shadown-color);
+  margin-top: 25px;
+} */
+.estilo{
+  margin-top: 30px;
+  text-align: center;
+  background-color: red;
+}
+.estilo p{
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
