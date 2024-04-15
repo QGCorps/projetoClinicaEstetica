@@ -166,28 +166,55 @@ header{
   padding-top: 2.5em;
 }
 
-.pacotes{
+.pacotes {
   width: 70vw;
-  height: 20em;
-  margin-top: 25px;
-  display: flex;
+  height: 30vh;
+  margin: 5% auto;
+  text-align: center;
+}
+
+.pacotes h2 {
+  width: 70vw;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 75px;
-  text-align: center;
-  text-decoration: none;
+}
 
+.colunasDiv{
+  width: 70vw;
+  display: flex;
+  margin-bottom: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;  
 }
 
 .coluna {
+  display: flex;
+  width: 30vw;
+  padding: 5px;
   margin-top: 5%;
   text-align: center;
   font-size: 1.25em;
   font-weight: 400;
-  margin-right: auto;
-  text-decoration: none;
+  flex-direction: column;
 }
 
+.coluna p {
+  margin: 25px auto;
+  font-weight: bolder;
+}
+
+.coluna ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.coluna li{
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
 
 footer{
   width: 100%;
