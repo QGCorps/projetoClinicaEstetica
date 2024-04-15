@@ -156,7 +156,7 @@ header{
   background: linear-gradient(90deg, rgba(91,57,113,1) 29%, rgba(164,108,200,1) 59%, rgba(91,57,113,1) 88%);
   width: 100%;
   height: 10em;
-  margin: 1% auto 5% auto;
+  margin: 1% auto;
 }
 .promocao h2{
   text-align: center;
@@ -167,9 +167,9 @@ header{
 }
 
 .pacotes {
-  width: 70vw;
-  height: 30vh;
-  margin: 5% auto;
+  width: 100%;
+  height: 20vh;
+  margin: 3% auto 10%;
   text-align: center;
 }
 
@@ -202,7 +202,7 @@ header{
 
 .coluna p {
   margin: 25px auto;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .coluna ul {
@@ -217,27 +217,47 @@ header{
 }
 
 footer{
+  position: absolute;
+  left: 0;
   width: 100%;
   line-height: 2em;
   background-color: #5b3971;
-  color:#f2d022;
-  font-size: 1em;
   font-weight: bold;
-  text-align: center;
-  left: 0;
-  bottom: 0;
-  position: absolute;
+  display: flex;
 }
 
-footer img{
-  width: 2em;
+.socialMedia{
+  width: 20vw;
+  margin: 3%;
+}
+.socialMedia a{
+  text-decoration: none;
+  color:#f2d022;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.fa-brands{
+  font-size: 2em;
+  color: #f2d022;
+  margin: 5% 2%; 
+}
+.mapa{
+  width: 60%;
   height: auto;
-  margin-top: 1.8em;
-  margin-right: 2em;
-  margin-left: 2em;
+  justify-content: center;
+  margin: 1%;
+}
+iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 
 .footerText{
-  margin-left: 70vw;
+  color:#f2d022;
   font-size: 1em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
