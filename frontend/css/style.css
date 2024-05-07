@@ -1,61 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Sora';
 }
 
-html{
+html {
   height: 100%;
 }
 
-body{
+body {
   height: 100%;
   background-color: #EEE;
 }
 
-#wrapper{
+#wrapper {
   min-height: 100%;
   max-width: 100%;
   position: relative;
 }
 
-.container{
+.container {
   min-height: 100%;
-  position: relative;.topo{
+  position: relative;
+}
+
+.topo {
   background-color: #5b3971;
   margin-right: auto;
   margin-left: auto;
-  }
 }
 
-.body-content{
+.body-content {
   padding-bottom: 30vh;
 }
 
-header{
+header {
   height: 30%;
   display: flex;
   background-color: #5b3971;
 }
 
-.logo{
+.logo {
   width: 150px;
   height: auto;
   margin-left: 8%;
   margin-top: 1%;
 }
 
-.logo img{
+.logo img {
   width: 150px;
   height: auto;
   min-width: 20%;
   min-height: 20%;
 }
 
-.btnMenu{
+.btnMenu {
   background-color: #f2d022;
   width: 180px;
   height: 40px;
@@ -64,18 +66,19 @@ header{
   font-size: 20px;
   text-decoration: none;
   border: none;
-  color: rgb (92, 0, 113);
+  color: #5c0071;
   cursor: pointer;
   margin-left: 65vw;
   margin-top: 5vh;
-  box-shadow: 2px 2px 2px rgb(#B2B2B2);
-}
-.btnHamburger{
-  display: none;
-  color: #f2d022
 }
 
-.menu{
+.btnHamburger {
+  display: none;
+  color: #f2d022;
+  margin-right: 3%;
+}
+
+.menu {
   width: 70%;
   height: 40px;
   margin-top: 20px;
@@ -84,53 +87,52 @@ header{
   align-items: center;
   border-radius: 0.3125em;
   margin-left: 40px;
-} 
+}
 
-.menu ul{
+.menu ul {
   display: flex;
   list-style: none;
   justify-content: space-around;
   width: 60vw;
 }
 
-.menu ul a{
+.menu ul a {
   text-decoration: none;
-  color:#f2d022;
+  color: #f2d022;
   font-size: 28px;
   font-weight: 500;
 }
 
-.menu ul li:hover{
-  color: #EEE;
+.menu ul li:hover {
+  color: #eee;
   transform: scale(1.15);
 }
 
-.carrossel{
+.carrossel {
   width: 80vw;
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.foto1, .foto3{
+.foto1,.foto3 {
   width: 30%;
 }
 
-.foto2{
+.foto2 {
   width: 30%;
   margin-left: 0;
   margin-right: 0;
 }
 
-.carrossel img{
+.carrossel img {
   height: 50%;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-
 }
 
-.texto{
+.texto {
   width: 70vw;
   color: #130901;
   margin-top: 1.875em;
@@ -138,27 +140,33 @@ header{
   margin-right: auto;
 }
 
-.texto h3{
+.texto h3 {
   font-size: 24px;
   text-align: center;
   margin-top: 8%;
   font-weight: bold;
 }
 
-.texto h2{
+.texto h2 {
   font-size: 24px;
   text-align: center;
   margin: 10% auto;
 }
 
-.promocao{
-  background: rgb(91,57,113);
-  background: linear-gradient(90deg, rgba(91,57,113,1) 29%, rgba(164,108,200,1) 59%, rgba(91,57,113,1) 88%);
+.promocao {
+  background: rgb(91, 57, 113);
+  background: linear-gradient(
+    90deg,
+    rgba(91, 57, 113, 1) 29%,
+    rgba(164, 108, 200, 1) 59%,
+    rgba(91, 57, 113, 1) 88%
+  );
   width: 100vw;
   height: 10em;
   margin: 1% auto;
 }
-.promocao h2{
+
+.promocao h2 {
   text-align: center;
   font-size: 32px;
   font-weight: bold;
@@ -173,12 +181,12 @@ header{
   text-align: center;
 }
 
-.pacoteDiv{
+.pacoteDiv {
   width: 75vw;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-around;  
+  justify-content: space-around;
 }
 
 .pacoteColuna {
@@ -188,7 +196,7 @@ header{
   flex-direction: column;
 }
 
-.pacote h2{
+.pacote h2 {
   font-size: 26px;
   font-weight: bold;
   text-align: center;
@@ -205,13 +213,13 @@ header{
   padding: 0;
 }
 
-.pacoteColuna li{
+.pacoteColuna li {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
-footer{
+footer {
   width: 100%;
   height: 30vh;
   position: absolute;
@@ -222,22 +230,22 @@ footer{
   display: flex;
 }
 
-.socialMedia{
+.socialMedia {
   width: 30vw;
   height: 16%;
   margin: 5% 0;
   display: flex;
 }
 
-.socialMedia a{
+.socialMedia a {
   width: 100%;
   text-decoration: none;
-  color:#f2d022;
+  color: #f2d022;
   font-size: 20px;
   display: flex;
 }
 
-.socialMedia p{
+.socialMedia p {
   width: 80%;
   text-decoration: none;
   font-size: 20px;
@@ -245,62 +253,63 @@ footer{
   color: #f2d022;
 }
 
-.fa-brands{
+.fa-brands {
   font-size: 2em;
   color: #f2d022;
   margin: 0 5%;
   justify-content: center;
 }
 
-.mapa{
+.mapa {
   width: 60vw;
   height: 250px;
-  margin: auto;
   align-items: center;
+  margin: 10px 100px 15px 50px;
 }
 
-iframe{
+iframe {
   width: 100%;
   height: 100%;
   border-radius: 5px;
 }
 
-.footerText p{
-  color:#f2d022;
+.footerText p {
+  color: #f2d022;
   font-size: 1em;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 5px;
+  right: 2px;
+  margin: auto;
 }
 
 @media screen and (max-width: 768px) {
-  .logo img{
+  .logo img {
     width: 15vw;
     height: auto;
     margin-top: 20%;
-  } 
+  }
 
-  .btnMenu{
+  .btnMenu {
     width: 120px;
     height: 20px;
     font-size: 16px;
     margin-left: 30vw;
     margin-top: 5vh;
-  }  
+  }
 
-  .menu ul li{
+  .menu ul li {
     font-size: 20px;
   }
 
-  .texto h2{
+  .texto h2 {
     font-size: 18px;
   }
 
-  .texto h3{
+  .texto h3 {
     font-size: 16px;
   }
 
-  .promocao h2{
+  .promocao h2 {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
@@ -308,145 +317,152 @@ iframe{
     padding-top: 2.5em;
   }
 
-  .pacote h2{
+  .pacote h2 {
     font-size: 20px;
   }
-  
-  .pacote p{
+
+  .pacote p {
     font-size: 16px;
   }
 
-  .pacoteColuna li{
+  .pacoteColuna li {
     font-size: 16px;
   }
 
-  .socialMedia a p{
-    font-size: 16px;
-  }
-  
-  .fa-brands{
+  .socialMedia a p {
     font-size: 16px;
   }
 
-  .mapa{
+  .fa-brands {
+    font-size: 16px;
+  }
+
+  .mapa {
     width: 100%;
     height: 200px;
-    margin: 3%;
+    margin: 3% 3% 0;
   }
 
-  .footerText{
+  .footerText {
     font-size: 10px;
   }
 }
 
 @media screen and (max-width: 550px){
-  .menu{
-    display: none;
-  }
-
-  .menu ul{
-    display: block;
-    width: 20vw;
-    justify-content: center;
-  }
-
-  .menu ul li{
-    text-align: center;
-    font-size: 14px;
-    padding: 5px 0;
-  }
-
-  .menu ul li:hover{
-    color: white;
-    transform: scale(1.15);
-  }
-
-  #menu.visible{
-    display: block;
-    width: 20vw;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    position: absolute;
-    top: 10.5vh;
-    right: 3vw;
-    z-index: 1;
-    border-radius: 5px;
-    background-color: #5b3971;
-  }  
-
-  .btnHamburger{
-    display: flex;
-    cursor: pointer;
-    justify-content: flex-end;
-    margin: 3% 10% 3% 0;
-  }
-
-  .btnHamburger i{
-    font-size: 32px;
-  }
-
-  .carrossel{
-    position: relative;
-    z-index: 0;
-  }
-
-  .promocao{
-    height: 5em;
-  }
-
-  .promocao h2{
-    font-size:20px;
-    padding-top: 1.5em;
-  }
-
-  .pacote{
-    padding: 1% auto 5%;
-  }
-
-  .pacote h2{
-    font-size: 16px;
-  }
-
-  .pacote p{
-    font-size: 14px;
-    margin: 1em auto;
-  }
-
-  .pacoteColuna li{
-    font-size: 14px;
-  }
-
-  .colunaFooter{
-    display: flex;
-    height: 50px;
-    align-items: center;
-    margin:1% auto;
-  }
+    .menu {
+      display: none;
+    }
   
-  .socialMedia{
-    width: 50px;
-    flex-direction:row ;
-    font-size: 14px;
-  }
+    .menu ul {
+      display: block;
+      width: 20vw;
+      justify-content: center;
+    }
   
-  .socialMedia p{
-    display: none;
-  }
+    .menu ul li {
+      text-align: center;
+      font-size: 14px;
+      padding: 5px 0;
+    }
+  
+    .menu ul li:hover {
+      color: white;
+      transform: scale(1.15);
+    }
+  
+    #menu.visible {
+      display: block;
+      width: 20vw;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      position: absolute;
+      top: 10.5vh;
+      right: 3vw;
+      z-index: 1;
+      border-radius: 5px;
+      background-color: #5b3971;
+    }
+  
+    .btnHamburger {
+      display: flex;
+      cursor: pointer;
+      justify-content: flex-end;
+      margin: 3% 10% 3% 0;
+    }
+  
+    .btnHamburger i {
+      font-size: 32px;
+    }
+  
+    .carrossel {
+      position: relative;
+      z-index: 0;
+    }
+  
+    .promocao {
+      height: 5em;
+    }
+  
+    .promocao h2 {
+      font-size: 20px;
+      padding-top: 1.5em;
+    }
+  
+    .pacote {
+      padding: 1% auto 5%;
+    }
+  
+    .pacote h2 {
+      font-size: 16px;
+    }
+  
+    .pacote p {
+      font-size: 14px;
+      margin: 1em auto;
+    }
+  
+    .pacoteColuna li {
+      font-size: 14px;
+    }
 
-  .mapa{
-    width: 100%;
-    height: 200px;
-  }
+    footer{
+      display: block;
+    }
+    
+    .colunaFooter{
+      display: flex;
+      width: 100%;
+    }
+    
+    .socialMedia {
+      width: 50px;
+      flex-direction: row;
+      font-size: 14px;
+      margin: 5% auto;
+    }
+  
+    .socialMedia p {
+      display: none;
+    }
+  
+    .mapa {
+      width: 90%;
+      height: 150px;
+      margin: 0 auto;
+    }
+
 }
+  
 
 @media screen and (min-width: 551px) {
-  .btnHamburger{
+  .btnHamburger {
     display: none;
   }
-  .menu{
+
+  .menu {
     display: flex;
   }
 }
