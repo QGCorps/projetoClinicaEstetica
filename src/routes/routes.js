@@ -9,7 +9,9 @@ router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + "./../pages/home.html"));
 })
 
-const pessoaController = require('../controllers/pessoaController');
+const clienteController = require('../controllers/clienteController');
+
+const prestadorController = require('../controllers/prestadorController');
 
 const servicoController = require('../controllers/servicoController');
 
@@ -17,43 +19,59 @@ const pacotesController = require('../controllers/pacotesController');
 
 const compromissoController = require('../controllers/compromissoController');
 
-const prestarController = require('../controllers/prestarController');
+const agendaController = require('../controllers/agendaController');
+
+const prestadoController = require('../controllers/prestadoController');
 
 const loginController = require('../controllers/loginController');
 
+const loginAdmController = require('../controllers/loginAdmController');
 
-//Rotas pessoa 
-router.get('/pessoa', loginController.autenticarToken, pessoaController.listarPessoas);
 
-router.get('/pessoa/:id_pessoa', pessoaController.buscarPessoa);
 
-router.post('/pessoa', pessoaController.adicionarPessoa);
+//Rotas cliente
+router.get('/cliente', clienteController.listarClientes);
 
-router.patch('/pessoa/:id_pessoa', loginController.autenticarToken, pessoaController.atualizarPessoa);
+router.get('/cliente/:id_cliente', clienteController.buscarCliente);
 
-router.delete('/pessoa/:id_pessoa', loginController.autenticarToken, pessoaController.deletarPessoa);
+router.post('/cliente', clienteController.adicionarCliente);
+
+router.patch('/cliente/:id_cliente', clienteController.atualizarCliente);
+
+router.delete('/cliente/:id_cliente', clienteController.deletarCliente);
+
+//Rotas prestador
+router.get('/prestador', loginAdmController.autenticarToken, prestadorController.listarPrestador);
+
+router.get('/prestador/:id_prestador', loginAdmController.autenticarToken, prestadorController.buscarPrestador);
+
+router.post('/prestador', prestadorController.adicionarPrestador);
+
+router.patch('/prestador/:id_prestador', loginAdmController.autenticarToken, prestadorController.atualizarPrestador);
+
+router.delete('/prestador/:id_prestador', loginAdmController.autenticarToken, prestadorController.deletarPrestador);
 
 //Rotas Serviço 
 router.get('/servico', servicoController.listarServico);
 
 router.get('/servico/:id_servico', servicoController.buscarServico);
 
-router.post('/servico', loginController.autenticarToken, servicoController.adicionarServico);
+router.post('/servico', servicoController.adicionarServico);
 
-router.patch('/servico/:id_servico', loginController.autenticarToken, servicoController.atualizarServico);
+router.patch('/servico/:id_servico', servicoController.atualizarServico);
 
-router.delete('/servico/:id_servico', loginController.autenticarToken, servicoController.deletarServico);
+router.delete('/servico/:id_servico', servicoController.deletarServico);
 
 //Rotas Pacotes 
 router.get('/pacotes', pacotesController.listarPacotes);
 
 router.get('/pacotes/:id_pacote', pacotesController.buscarPacote);
 
-router.post('/pacotes', loginController.autenticarToken, pacotesController.adicionarPacote);
+router.post('/pacotes', loginAdmController.autenticarToken, pacotesController.adicionarPacote);
 
-router.patch('/pacotes/:id_pacote', loginController.autenticarToken, pacotesController.atualizaPacote);
+router.patch('/pacotes/:id_pacote', loginAdmController.autenticarToken, pacotesController.atualizaPacote);
 
-router.delete('/pacotes/:id_pacote', loginController.autenticarToken, pacotesController.deletarPacote);
+router.delete('/pacotes/:id_pacote', loginAdmController.autenticarToken, pacotesController.deletarPacote);
 
 
 //Rotas Compromisso 
@@ -66,26 +84,45 @@ router.get('/compromisso/:id_compromisso', compromissoController.buscarCompromis
 
 router.get('/compromisso/data/:data_compromisso', compromissoController.buscarCompromissoData);
 
-router.post('/compromisso', compromissoController.adcionarCompromisso);
+router.post('/compromisso', compromissoController.adicionarCompromisso);
 
 router.patch('/compromisso/:id_compromisso', compromissoController.atualizarCompromisso);
 
 router.delete('/compromisso/:id_compromisso', compromissoController.deletarCompromisso);
 
+//Rotas Agenda
+router.get('/agenda', agendaController.listarAgenda);
 
-//Rotas Prestar 
-router.get('/prestar', prestarController.listarPrestar);
+router.get('/agenda/:id_agendamento', agendaController.buscarAgenda);
 
-router.get('/prestar/:id_prestar', prestarController.buscarPrestar);
+router.post('/agenda', agendaController.adicionarAgenda);
 
-router.post('/prestar', prestarController.adicionarPrestar);
+router.patch('/agenda/:id_agendamento', agendaController.atualizarAgenda);
 
-router.patch('/prestar/:id_prestar', prestarController.atualizaPrestar);
+router.delete('/agenda/:id_agendamento', agendaController.deletarAgenda);
 
-router.delete('/prestar/:id_prestar', prestarController.deletarPrestar);
+
+//Rotas Prestado
+router.use('/prestado', loginAdmController.autenticarToken);
+
+router.get('/prestado',  prestadoController.listarPrestado);
+
+router.get('/prestado/:id_prestado', prestadoController.buscarPrestado);
+
+router.post('/prestado', prestadoController.adicionarPrestado);
+
+router.patch('/prestado/:id_prestado', prestadoController.atualizaPrestado);
+
+router.delete('/prestado/:id_prestado', prestadoController.deletarPrestado);
 
 
 //Rotas login 
 router.post('/login', loginController.loginCliente);
+
+//Rota login ADM
+router.post('/loginAdm', loginAdmController.loginPrestador);
+
+
+
 
 module.exports = router; 

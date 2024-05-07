@@ -48,9 +48,6 @@ h2{
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 16px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -98,11 +95,8 @@ h2{
   height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
 
 .servicos{
   display: flex;
@@ -120,6 +114,10 @@ h2{
   margin: 5% auto;
   font-weight: bold;
 }
+
+/* #pacotes{
+  display: none;
+} */
 
 .pacotesAgenda .sessao{
   display: flex;
@@ -144,9 +142,6 @@ h2{
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 18px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -228,4 +223,142 @@ h2{
   padding: 10px;
   border-radius: 15px;
   border: none;
+}
+
+@media screen and (max-width:768px){
+  .agenda{
+    margin: 3em auto 6em;
+  }
+
+  .titulo{
+    font-size: 24px;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  .dadosPessoais label{
+    font-size: 14px;
+  }
+  
+  .dadosPessoais input{
+    font-size: 14px;
+  }
+
+  .itemCheckbox {
+    font-size: 14px;
+  }
+
+  .checkmark {
+    height: 18px;
+    width: 18px;
+  }
+
+  .itemCheckbox .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+  }
+
+  .procedimento{
+    font-size: 14px;
+  }
+
+  .itemRadio {
+    font-size: 14px;
+  }
+
+  .radiomark {
+    height: 18px;
+    width: 18px;
+  }
+
+  .itemRadio .radiomark:after {
+    top: 4px;
+    left: 4px;
+  }
+  
+  .estiloHora{
+    font-size: 14px;
+  }
+  
+  .estiloHora input{
+    font-size: 14px;
+  }
+
+  .botao button{
+    font-size: 14px;
+  }
+
+}
+@media screen and (max-width:550px){
+  .agenda{
+    margin: 3em auto 4em;
+  }
+
+  .titulo{
+    font-size: 18px;
+  }
+
+  h2{
+    font-size: 16px;
+  }
+
+  .dadosPessoais label{
+    font-size: 12px;
+  }
+  
+  .dadosPessoais input{
+    font-size: 12px;
+  }
+
+  .itemCheckbox {
+    font-size: 12px;
+  }
+
+  .checkmark {
+    height: 14px;
+    width: 14px;
+  }
+
+  .itemCheckbox .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 2px;
+    height: 6px;
+  }
+
+  .procedimento{
+    font-size: 12px;
+  }
+
+  .itemRadio {
+    font-size: 12px;
+  }
+
+  .radiomark {
+    height: 14px;
+    width: 14px;
+  }
+
+  .itemRadio .radiomark:after {
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+  }
+  
+  .estiloHora{
+    font-size: 12px;
+  }
+  
+  .estiloHora input{
+    font-size: 12px;
+  }
+
+  .botao button{
+    font-size: 12px;
+  }
 }

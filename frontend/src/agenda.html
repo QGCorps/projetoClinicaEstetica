@@ -22,7 +22,10 @@
           <a href="../src/login.html">
             <button class="btnMenu">Login</button>
           </a>
-          <div class="menu">
+          <div class="btnHamburger" id="grupoMenu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="menu" id="menu">
             <nav>
               <ul>
                 <a href="../src/index.html">
@@ -87,9 +90,9 @@
                   <span class="checkmark"></span>
                 </label>
               </div>
-              <div class="pacotesAgenda">
+              <div class="pacotesAgenda" id="pacotes">
                 <h2>Pacotes</h2>
-                <div class="massagemRadio linha">
+                <div class="massagemRadio linha" id="massagem">
                   <h3>Massagem Relaxante</h3>
                   <div class="sessao">
                     <label class="controle-form itemRadio">4 - Sessões
@@ -117,7 +120,7 @@
                   </div>
                 </div>
 
-                <div class="drenagemRadio linha">
+                <div class="drenagemRadio linha" id="drenagem">
                   <h3>Drenagem Linfática</h3>
                   <div class="sessao">
                     <label class="controle-form itemRadio">4 - Sessões
@@ -163,14 +166,22 @@
     <footer>
       <div class="colunaFooter">
         <div class="socialMedia">
-          <a href="https://www.instagram.com/ateliemajugale"><i class="fa-brands fa-instagram"></i>Ateliê Maju Galé</a>
+          <a href="https://www.instagram.com/ateliemajugale">
+            <i class="fa-brands fa-instagram"></i>
+            <p>Ateliê Maju Galé</p>
+          </a>
         </div>
         <div class="socialMedia">
-          <a href="https://api.whatsapp.com/send?phone=5516997130916&text=Quero%20agendar%20hoje!"><i
-              class="fa-brands fa-whatsapp"></i>16997130916</a>
+          <a href="https://api.whatsapp.com/send?phone=5516997130916&text=Quero%20agendar%20hoje!">
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>16997130916</p>
+          </a>
         </div>
         <div class="socialMedia">
-          <a href="https://www.facebook.com/ateliemajugale/"><i class="fa-brands fa-facebook"></i>Facebook: Ateliê Maju Galé</a>
+          <a href="https://www.facebook.com/ateliemajugale/">
+            <i class="fa-brands fa-facebook"></i>
+            <p>Ateliê Maju Galé</p>
+          </a>
         </div>
       </div>
       <div class="mapa colunaFooter">
@@ -179,7 +190,9 @@
           allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="footerText colunaFooter">Desenvolvido por @KameHouse 🏠</div>
+      <div class="footerText colunaFooter">
+        <p>Desenvolvido por @KameHouse 🏠</p>
+      </div>
     </footer>
 
   </div>
@@ -187,6 +200,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://kit.fontawesome.com/4743cb5853.js" crossorigin="anonymous"></script>
+  <script src="../js/menu.js"></script>
   <!-- IMPORTANTE: obedecer essa ordem -->
 </body>
 

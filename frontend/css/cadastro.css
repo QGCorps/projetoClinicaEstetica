@@ -1,9 +1,6 @@
 .cadastro{
-  margin-top: 3em;
   width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 9em;
+  margin: 3em auto 9em;
 }
 
 .titulo{
@@ -14,10 +11,8 @@
 }
 
 .conteudo{
-  margin-top: 1em;
   width: 70vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1em auto;
   padding: 1.5em;
   border: 5px solid #5b3971;
   border-radius: 15px;
@@ -35,10 +30,11 @@
   display: inline-block;
   margin-bottom: 5px;
   color: #5b3971;
+  font-size: 16px;
 }
 
 .controle-form input{
-  font-size: 16;
+  font-size: 16px;
   width: 98%;
   padding: 10px;
   border-radius: 15px;
@@ -78,4 +74,46 @@
   padding: 10px;
   border-radius: 15px;
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .cadastro{
+    margin: 3em auto 6em;
+  }
+
+  .titulo{
+    font-size: 24px;
+  }
+  
+  .controle-form label{
+    font-size: 14px;
+  }
+
+  .controle-form input{
+    font-size: 14px;
+  }
+
+  .botao button{
+    font-size: 14px;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .titulo{
+    font-size: 20px;
+  }
+
+  .controle-form label{
+    font-size: 12px;
+  }
+
+  .controle-form input{
+    font-size: 12px;
+  }
+
+  .botao button{
+    font-size: 12px;
+    width: 37%;
+  }
 }
