@@ -1,0 +1,92 @@
+.servico{
+  height: auto;
+}
+
+.tituloServico{
+  font-size: 32px;
+  color: #5b3971;
+  font-weight: bold;
+  text-align: center;
+}
+
+.conteudoImagem img, .textoServico h2, .containerServico{
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+}
+
+.textoServico h2{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #b2b2b2;
+  color: #5b3971;
+  padding: 20% 10%;
+}
+
+.conteudoImagem img{
+  border: 0.3em solid #5b3971;
+}
+
+.containerServico { 
+  margin:2% auto 5%;
+  position: relative;
+  perspective: 1000px;
+}
+
+.maquiagemFront, .fibraFront, .esmaltacaoFront, .drenagemFront, .massagemFront, .limpezaFront {
+  position: absolute;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+.maquiagemBack, .fibraBack, .esmaltacaoBack, .drenagemBack, .massagemBack, .limpezaBack{
+  position: absolute;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+.maquiagemFront, .fibraFront, .esmaltacaoFront, .drenagemFront, .massagemFront, .limpezaFront{
+  transform: rotateY(0deg);
+}
+
+.maquiagemBack, .fibraBack, .esmaltacaoBack, .drenagemBack, .massagemBack, .limpezaBack{
+  transform: rotateY(180deg);
+}
+
+.containerServico:hover .maquiagemFront, .containerServico:hover .fibraFront, .containerServico:hover .esmaltacaoFront, .containerServico:hover .drenagemFront, .containerServico:hover .massagemFront, .containerServico:hover .limpezaFront{
+  transform: rotateY(-180deg);
+}
+
+.containerServico:hover .maquiagemBack, .containerServico:hover .fibraBack, .containerServico:hover .esmaltacaoBack, .containerServico:hover .drenagemBack, .containerServico:hover .massagemBack, .containerServico:hover .limpezaBack{
+  transform: rotateY(0deg);
+}
+
+.estilos{
+  margin: 3vh auto 10vh;
+  width: 90vw;
+  align-items: center;
+}
+.linha{
+  margin: 10px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3,3fr);
+}
+/* .estilo img{
+  width: 26vw;
+  height: 18.75em;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px var(--shadown-color);
+  margin-top: 25px;
+} */
+.estilo{
+  margin-top: 30px;
+  text-align: center;
+  background-color: red;
+}
+.estilo p{
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}

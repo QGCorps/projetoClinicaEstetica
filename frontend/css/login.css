@@ -75,6 +75,7 @@
 	padding: 15px;
 	border-radius: 20px;
 	border: 4px solid #f2d022;
+	cursor:pointer;
 }
 
 .esqueceu-senha {
