@@ -1,11 +1,9 @@
-$(document).redy(function (){
-  $('#massagem_agenda').click(function () {
-    $('#massagem').toggleClass('visible');
-  })
-})
+document.getElementById('massagemCheckbox').addEventListener('change', function() {
+  var opcoes1 = document.getElementById('massagemRadio');
+  opcoes1.style.display = this.checked ? 'block' : 'none';
+});
 
-$(document).redy(function (){
-  $('#drenagem_agenda').click(function () {
-    $('#drenagem').toggleClass('visible');
-  })
-})
+document.getElementById('drenagemCheckbox').addEventListener('change', function() {
+  var opcoes2 = document.getElementById('drenagemRadio');
+  opcoes2.style.display = this.checked ? 'block' : 'none';
+});

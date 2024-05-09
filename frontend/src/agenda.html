@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/agenda.css" />
   <title>Ateliê - Maju Galé</title>
-  <style>
-    .radio-hidden{display: none;}
-  </style>
 </head>
 
 <body>
@@ -69,53 +66,54 @@
               <div class="procedimento">
                 <h2>Procedimento</h2>
                 <label class="itemCheckbox controle-form"> Fibra de Vidro
-                  <input type="checkbox" name="" id="fibra_agenda">
+                  <input type="checkbox" name="" id="fibraCheckbox">
                   <span class="checkmark"></span>
                 </label>
                 <label class="itemCheckbox controle-form"> Esmaltação em Gel
-                  <input type="checkbox" name="" id="esmaltacao_agenda">
+                  <input type="checkbox" name="" id="esmaltacaoCheckbox">
                   <span class="checkmark"></span>
                 </label>
                 <label class="itemCheckbox controle-form"> Maquiagem
-                  <input type="checkbox" name="" id="maquiagem_agenda">
+                  <input type="checkbox" name="" id="maquiagemCheckbox">
                   <span class="checkmark"></span>
                 </label>
                 <label class="itemCheckbox controle-form"> Limpeza de Pele
-                  <input type="checkbox" name="" id="limpeza_agenda">
+                  <input type="checkbox" name="" id="limpezaCheckbox">
                   <span class="checkmark"></span>
                 </label>
                 <label class="itemCheckbox controle-form" > Massagem
-                  <input type="checkbox" name="" id="massagem_agenda" onclick="toggleRadioVisibility()">
+                  <input type="checkbox" name="" id="massagemCheckbox">
                   <span class="checkmark"></span>
                 </label>
                 <label class="itemCheckbox controle-form"> Drenagem Linfática
-                  <input type="checkbox" name="" id="drenagem_agenda" onclick="toggleRadioVisibility()">
+                  <input type="checkbox" name="" id="drenagemCheckbox">
                   <span class="checkmark"></span>
                 </label>
               </div>
-              <div class="pacotesAgenda radio-hidden" id="pacotes">
-                <h2>Pacotes</h2>
-                <div class="massagemRadio linha radio-hidden" id="massagem">
+
+              <!-- <div class="pacotesAgenda opcoes" id="pacotes">
+                <h2>Pacotes</h2> -->
+                <div class="massagemRadio linha opcoes pacotesAgenda" id="massagemRadio">
                   <h3>Massagem Relaxante</h3>
-                  <div class="sessao radio-hidden">
+                  <div class="sessao ">
                     <label class="controle-form itemRadio">4 - Sessões
                       <input type="radio" name="massagemRadio">
                       <span class="radiomark"></span>
                     </label>
                   </div>
-                  <div class="sessao radio-hidden">
+                  <div class="sessao ">
                     <label class="controle-form itemRadio">8 - Sessões
                       <input type="radio" name="massagemRadio">
                       <span class="radiomark"></span>
                     </label>
                   </div>
-                  <div class="sessao radio-hidden">
+                  <div class="sessao ">
                     <label class="controle-form itemRadio">12 - Sessões
                       <input type="radio" name="massagemRadio">
                       <span class="radiomark"></span>
                     </label>
                   </div>
-                  <div class="sessao radio-hidden">
+                  <div class="sessao ">
                     <label class="controle-form itemRadio">Nenhuma Sessão
                       <input type="radio" name="massagemRadio">
                       <span class="radiomark"></span>
@@ -123,34 +121,34 @@
                   </div>
                 </div>
 
-                <div class="drenagemRadio linha radio-hidden" id="drenagem">
+                <div class="drenagemRadio linha opcoes pacotesAgenda" id="drenagemRadio">
                   <h3>Drenagem Linfática</h3>
-                  <div class="sessao radio-hidden">
+                  <div class="sessao ">
                     <label class="controle-form itemRadio">4 - Sessões
                       <input type="radio" name="drenagemRadio">
                       <span class="radiomark"></span>
                     </label>
                   </div>
-                  <div class="sessao radio-hidden">
+                  <div class="sessao ">
                     <label class="controle-form itemRadio">8 - Sessões
                       <input type="radio" name="drenagemRadio">
                       <span class="radiomark"></span>
                     </label>
                   </div>
-                  <div class="sessao radio-hidden">
+                  <div class="sessao ">
                     <label class="controle-form itemRadio">12 - Sessões
                       <input type="radio" name="drenagemRadio">
                       <span class="radiomark"></span>
                     </label>
                   </div>
-                  <div class="sessao radio-hidden">
+                  <div class="sessao ">
                     <label class="controle-form itemRadio">Nenhuma Sessão
                       <input type="radio" name="drenagemRadio">
                       <span class="radiomark"></span>
                     </label>
                   </div>
                 </div>
-              </div>
+              <!-- </div> -->
             </div>
 
             <div class="estiloHora">
@@ -204,28 +202,8 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://kit.fontawesome.com/4743cb5853.js" crossorigin="anonymous"></script>
   <script src="../js/menu.js"></script>
+  <script src="../js/agenda.js"></script>
   <!-- IMPORTANTE: obedecer essa ordem -->
-  <script>
-    function toggleRadioVisibility(){
-      var chckeboxMassagem = document.getElementById('massagem_agenda');
-      var radioMassagem = document.getElementById('massagem');
-
-      var chckeboxDrenagem = document.getElementById('drenagem_agenda');
-      var radioDrenagem = document.getElementById('drenagem');
-
-      if (chckeboxMassagem.checked) {
-        radioMassagem.style.display = 'block';
-      } else{
-        radioMassagem.style.display = 'none';
-      }
-      
-      if (chckeboxDrenagem.checked){
-        radioDrenagem.style.display = 'block';
-      } else{
-        radioDrenagem.style.display = 'none';
-      }
-    }
-  </script>
 </body>
 
 </html>

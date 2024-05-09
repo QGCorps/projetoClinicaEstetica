@@ -123,14 +123,15 @@ h2{
   margin-bottom: 5%;
 }
 
-
 .pacotesAgenda h2{
   margin: 1em auto 5%;
   font-weight: bold;
+  font-size: 16px;
 }
 
 .pacotesAgenda h3{
   margin-bottom: 5%;
+  font-size: 14px;
 }
 
 .itemRadio {
@@ -147,11 +148,6 @@ h2{
   opacity: 0;
   cursor: pointer;
 }
-
-/* .pacotesAgenda{
-  display: none;
-} */
-
 
 .radiomark {
   position: absolute;
@@ -192,9 +188,9 @@ h2{
 	background: white;
 }
 
-/* .radio-hidden{
-  display:none;
-} */
+.opcoes{
+  display: none;
+}
 
 .estiloHora{
   font-size: 16px;
@@ -229,6 +225,7 @@ h2{
   padding: 10px;
   border-radius: 15px;
   border: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width:768px){
@@ -259,6 +256,7 @@ h2{
   .checkmark {
     height: 18px;
     width: 18px;
+    left: 10px;
   }
 
   .itemCheckbox .checkmark:after {
@@ -272,6 +270,21 @@ h2{
     font-size: 14px;
   }
 
+  .pacotesAgenda{
+    margin-top: 5%;
+    padding-top: 7%; 
+  }
+
+  .pacotesAgenda h3{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .pacotesAgenda .sessao{
+    margin-bottom: 1%;
+  }
+
   .itemRadio {
     font-size: 14px;
   }
@@ -279,6 +292,7 @@ h2{
   .radiomark {
     height: 18px;
     width: 18px;
+    left: 10px;
   }
 
   .itemRadio .radiomark:after {
@@ -327,6 +341,7 @@ h2{
   .checkmark {
     height: 14px;
     width: 14px;
+    left: 15px;
   }
 
   .itemCheckbox .checkmark:after {
@@ -340,13 +355,29 @@ h2{
     font-size: 12px;
   }
 
+  .pacotesAgenda{
+    margin-top: 10%;
+    padding-top: 12%; 
+  }
+
+  .pacotesAgenda h3{
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .pacotesAgenda .sessao{
+    margin-bottom: 1%;
+  }
+
+
   .itemRadio {
-    font-size: 12px;
+    font-size: 8px;
   }
 
   .radiomark {
     height: 14px;
     width: 14px;
+    left: 15px;
   }
 
   .itemRadio .radiomark:after {
