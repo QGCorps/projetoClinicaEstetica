@@ -115,17 +115,14 @@ h2{
   font-weight: bold;
 }
 
-/* #pacotes{
-  display: none;
-} */
-
-.pacotesAgenda .sessao{
+.pacotesAgenda .sessao {
   display: flex;
   flex-direction: column;
   align-items: self-start;
   justify-content: center;
   margin-bottom: 5%;
 }
+
 
 .pacotesAgenda h2{
   margin: 1em auto 5%;
@@ -150,6 +147,11 @@ h2{
   opacity: 0;
   cursor: pointer;
 }
+
+/* .pacotesAgenda{
+  display: none;
+} */
+
 
 .radiomark {
   position: absolute;
@@ -182,13 +184,17 @@ h2{
 }
 
 .itemRadio .radiomark:after {
-	top: 8px;
+  top: 8px;
 	left: 8px;
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
 	background: white;
 }
+
+/* .radio-hidden{
+  display:none;
+} */
 
 .estiloHora{
   font-size: 16px;

@@ -3,6 +3,7 @@ $(document).redy(function (){
     $('#massagem').toggleClass('visible');
   })
 })
+
 $(document).redy(function (){
   $('#drenagem_agenda').click(function () {
     $('#drenagem').toggleClass('visible');

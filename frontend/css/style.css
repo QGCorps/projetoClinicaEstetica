@@ -231,7 +231,7 @@ footer {
 }
 
 .socialMedia {
-  width: 30vw;
+  width: 18vw;
   height: 16%;
   margin: 5% 0;
   display: flex;
@@ -301,6 +301,10 @@ iframe {
     font-size: 20px;
   }
 
+  .menu ul a {
+    font-size: 20px;
+  }
+
   .texto h2 {
     font-size: 18px;
   }
@@ -364,7 +368,11 @@ iframe {
       font-size: 14px;
       padding: 5px 0;
     }
-  
+    
+    .menu ul a {
+      font-size: 14px;
+    }
+    
     .menu ul li:hover {
       color: white;
       transform: scale(1.15);
@@ -384,6 +392,7 @@ iframe {
       z-index: 1;
       border-radius: 5px;
       background-color: #5b3971;
+      cursor: pointer;
     }
   
     .btnHamburger {
@@ -455,7 +464,6 @@ iframe {
     }
 
 }
-  
 
 @media screen and (min-width: 551px) {
   .btnHamburger {
